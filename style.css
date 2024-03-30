@@ -1,0 +1,101 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('path_to_your_background_image.jpg') top center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-img img {
+    max-width: 100%;
+    margin-left: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+body {
+    background-image: url('background.jpg');
+    background-size: cover;
+
+    background-attachment: fixed;
+
+    background-position: center center;
+    background-color: #464646;
+}
+
+/* Styling content for better visibility over the background image */
+.content {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 8px;
+}
+
+h1, p {
+    margin: 0 0 20px 0;
+}
+.circular-image {
+    width: 400px; /* Set the width as desired */
+    height: 400px; /* Make sure height is the same as the width for a perfect circle */
+    border-radius: 50%; /* This creates the circular effect */
+    object-fit: cover; /* This will ensure the image covers the space properly without stretching */
+    border: 4px solid #fff; /* Optional: Adds a white border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Make the navbar fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100000; /* Ensures navbar is above other content */
+    background-color: #333; /* or any color you prefer */
+}
+
+/* Add padding to the body to prevent content from being hidden behind the navbar */
+body {
+    padding-top: 1px; /* Adjust based on the height of your navbar */
+}
+.project-item {
+    background-color: #1d1d1d; /* White background for each project item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to create a "lifted" effect */
+    border-radius: 8px; /* Rounds the corners of the project items */
+    margin-bottom: 20px; /* Adds space between project items */
+    padding: 20px; /* Adds padding inside each project item */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* Slightly raises the project item on hover */
+}
+
+h2 {
+    color: #ffffff; /* Dark color for headings for contrast and emphasis */
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+h3 {
+    color: #ffffff; /* Adds a pop of color for project titles */
+    margin-top: 0;
+}
+
+p, ul {
+    color: #b6b6b6; /* Slightly lighter color for text for readability */
+}
+
+ul {
+    padding-left: 20px; /* Proper indentation for list items */
+}
+
+ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
